@@ -1,0 +1,86 @@
+export const CarouselData = [
+	{
+		id: "1",
+		bgImage: "/src/assets/img/hero/1.jpg",
+		category: "Livestyle",
+		title: "Top 10 Fashion Trends from Spring/Summer 2021 Fashion Weeks",
+		author: {
+			authorImage: "/src/assets/others/1.jpg",
+			authorName: "David smith",
+		},
+		day: "January 12, 2021",
+		time: 10,
+	},
+	{
+		id: "2",
+		bgImage: "/src/assets/img/hero/3.jpg",
+		category: "Travel",
+		title: "Top 10 Forests That Every Nature Lover Must Visit",
+		author: {
+			authorImage: "/src/assets/others/1.jpg",
+			authorName: "David smith",
+		},
+		day: "January 15, 2021",
+		time: 10,
+	},
+	{
+		id: "3",
+		bgImage: "/src/assets/img/hero/2.jpg",
+		category: "travel",
+		title: "10 Best and Most Beautiful Places to Visit in Italy ",
+		author: {
+			authorImage: "/src/assets/others/1.jpg",
+			authorName: "David smith",
+		},
+		day: "January 12, 2021",
+		time: 10,
+	},
+	{
+		id: "4",
+		bgImage: "/src/assets/img/hero/1.jpg",
+		category: "Livestyle",
+		title: "Top 10 Fashion Trends from Spring/Summer 2021 Fashion Weeks",
+		author: {
+			authorImage: "/src/assets/others/1.jpg",
+			authorName: "David smith",
+		},
+		day: "January 12, 2021",
+		time: 10,
+	},
+	{
+		id: "5",
+		bgImage: "/src/assets/img/hero/3.jpg",
+		category: "Travel",
+		title: "Top 10 Forests That Every Nature Lover Must Visit",
+		author: {
+			authorImage: "/src/assets/others/1.jpg",
+			authorName: "David smith",
+		},
+		day: "January 15, 2021",
+		time: 10,
+	},
+	{
+		id: "6",
+		bgImage: "/src/assets/img/hero/2.jpg",
+		category: "travel",
+		title: "10 Best and Most Beautiful Places to Visit in Italy ",
+		author: {
+			authorImage: "/src/assets/others/1.jpg",
+			authorName: "David smith",
+		},
+		day: "January 12, 2021",
+		time: 10,
+	},
+	{
+		id: "7",
+		bgImage: "/src/assets/img/hero/3.jpg",
+		category: "Travel",
+		title: "Top 10 Forests That Every Nature Lover Must Visit",
+		author: {
+			authorImage: "/src/assets/others/1.jpg",
+			authorName: "David smith",
+		},
+		day: "January 15, 2021",
+		time: 10,
+	},
+];

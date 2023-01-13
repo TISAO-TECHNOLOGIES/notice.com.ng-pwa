@@ -1,4 +1,5 @@
 import React from "react";
+import PostCard from "./PostCard";
 
 const GridLayout = () => {
 	return (
@@ -6,12 +7,19 @@ const GridLayout = () => {
 			<section className="mt-80">
 				<div className="container-fluid">
 					<div className="row">
-						<div className="col-lg-4 col-md-6">
-							{/* <!--Post-1--> */}
+						{/* <!--Post--> */}
+						{[1, 2, 3, 4, 5, 6, 7, 8, 9].map((card, index) => (
+							<div key={index} className="col-lg-4 col-md-6">
+								<PostCard />
+							</div>
+						))}
+
+						{/* <!--Post-1--> */}
+						{/* <div className="col-lg-4 col-md-6">
 							<div className="post-card">
 								<div className="post-card-image">
 									<a href="./post-default.html">
-										<img src="/assets/others/25.jpg" alt="" />
+										<img src="/src/assets/others/25.jpg" alt="" />
 									</a>
 								</div>
 								<div className="post-card-content">
@@ -26,7 +34,7 @@ const GridLayout = () => {
 										<ul className="list-inline">
 											<li>
 												<a href="./author.html">
-													<img src="/assets/others/1.jpg" alt="" />
+													<img src="/src/assets/others/1.jpg" alt="" />
 												</a>
 											</li>
 											<li>
@@ -38,14 +46,15 @@ const GridLayout = () => {
 									</div>
 								</div>
 							</div>
-							{/* <!--/--> */}
-						</div>
-						<div className="col-lg-4 col-md-6">
-							{/* <!--Post-2--> */}
+						</div> */}
+						{/* <!--/--> */}
+
+						{/* <!--Post-2--> */}
+						{/* <div className="col-lg-4 col-md-6">
 							<div className="post-card">
 								<div className="post-card-image">
 									<a href="./post-default.html">
-										<img src="/assets/others/23.jpg" alt="" />
+										<img src="/src/assets/others/23.jpg" alt="" />
 									</a>
 								</div>
 								<div className="post-card-content">
@@ -60,7 +69,7 @@ const GridLayout = () => {
 										<ul className="list-inline">
 											<li>
 												<a href="./author.html">
-													<img src="/assets/others/1.jpg" alt="" />
+													<img src="/src/assets/others/1.jpg" alt="" />
 												</a>
 											</li>
 											<li>
@@ -72,10 +81,11 @@ const GridLayout = () => {
 									</div>
 								</div>
 							</div>
-							{/* <!--/--> */}
-						</div>
-						<div className="col-lg-4 col-md-6">
-							{/* <!--Post-3--> */}
+						</div> */}
+						{/* <!--/--> */}
+
+						{/* <!--Post-3--> */}
+						{/* <div className="col-lg-4 col-md-6">
 							<div className="post-card">
 								<div className="post-card-image">
 									<a href="./post-default.html">
@@ -106,10 +116,11 @@ const GridLayout = () => {
 									</div>
 								</div>
 							</div>
-							{/* <!--/--> */}
-						</div>
-						<div className="col-lg-4 col-md-6">
-							{/* <!--Post-4--> */}
+						</div> */}
+						{/* <!--/--> */}
+
+						{/* <!--Post-4--> */}
+						{/* <div className="col-lg-4 col-md-6">
 							<div className="post-card">
 								<div className="post-card-image">
 									<a href="./post-default.html">
@@ -141,10 +152,11 @@ const GridLayout = () => {
 									</div>
 								</div>
 							</div>
-							{/* <!--/--> */}
-						</div>
-						<div className="col-lg-4 col-md-6">
-							{/* <!--Post-5--> */}
+						</div> */}
+						{/* <!--/--> */}
+
+						{/* <!--Post-5--> */}
+						{/* <div className="col-lg-4 col-md-6">
 							<div className="post-card">
 								<div className="post-card-image">
 									<a href="./post-default.html">
@@ -176,10 +188,11 @@ const GridLayout = () => {
 									</div>
 								</div>
 							</div>
-							{/* <!--/--> */}
-						</div>
-						<div className="col-lg-4 col-md-6">
-							{/* <!--Post-6--> */}
+						</div> */}
+						{/* <!--/--> */}
+
+						{/* <!--Post-6--> */}
+						{/* <div className="col-lg-4 col-md-6">
 							<div className="post-card">
 								<div className="post-card-image">
 									<a href="./post-default.html">
@@ -211,10 +224,11 @@ const GridLayout = () => {
 									</div>
 								</div>
 							</div>
-							{/* <!--/--> */}
-						</div>
-						<div className="col-lg-4 col-md-6">
-							{/* <!--Post-7--> */}
+						</div> */}
+						{/* <!--/--> */}
+
+						{/* <!--Post-7--> */}
+						{/* <div className="col-lg-4 col-md-6">
 							<div className="post-card">
 								<div className="post-card-image">
 									<a href="./post-default.html">
@@ -246,10 +260,11 @@ const GridLayout = () => {
 									</div>
 								</div>
 							</div>
-							{/* <!--/--> */}
-						</div>
-						<div className="col-lg-4 col-md-6">
-							{/* <!--Post-8--> */}
+						</div> */}
+						{/* <!--/--> */}
+
+						{/* <!--Post-8--> */}
+						{/* <div className="col-lg-4 col-md-6">
 							<div className="post-card">
 								<div className="post-card-image">
 									<a href="./post-default.html">
@@ -281,10 +296,11 @@ const GridLayout = () => {
 									</div>
 								</div>
 							</div>
-							{/* <!--/--> */}
-						</div>
-						<div className="col-lg-4 col-md-6">
-							{/* <!--Post-9--> */}
+						</div> */}
+						{/* <!--/--> */}
+
+						{/* <!--Post-9--> */}
+						{/* <div className="col-lg-4 col-md-6">
 							<div className="post-card">
 								<div className="post-card-image">
 									<a href="./post-default.html">
@@ -316,8 +332,8 @@ const GridLayout = () => {
 									</div>
 								</div>
 							</div>
-							{/* <!--/--> */}
-						</div>
+						</div> */}
+						{/* <!--/--> */}
 						{/* <!--ads-block--> */}
 						<div className="col-lg-12">
 							<div className="ads-block">

@@ -34,4 +34,6 @@
         }
     }
 
+    setTimeout(() => {}, 5000)
+
     toggleSwitch.addEventListener('change', switchTheme, false);
