@@ -1,33 +1,49 @@
 import React from "react";
 
-const PostCard = () => {
+interface IPost {
+	postImage: string;
+	category: string;
+	title: string;
+	description: string;
+	author: {
+		authorImage: string;
+		authorName: string;
+	};
+	day: string;
+}
+
+const PostCard = ({ postImage, category, title, description, author, day }: IPost) => {
+	const truncate = (word: string, n: number) => {
+		return word?.length > n ? word.substr(0, n - 1) + "..." : word;
+	};
+
 	return (
 		<div className="post-card">
 			<div className="post-card-image">
 				<a href="./post-default.html">
-					<img src="/src/assets/others/25.jpg" alt="" />
+					<img src={postImage} alt="" />
 				</a>
 			</div>
 			<div className="post-card-content">
 				<a href="./blog-grid.html" className="categorie">
-					Livestyle
+					{category}
 				</a>
 				<h5>
-					<a href="./post-default.html">How to Choose Outfits for Work for woman and men</a>
+					<a href="./post-default.html">{title}</a>
 				</h5>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quam atque ipsa laborum sunt distinctio...</p>
+				<p>{truncate(description, 80)}</p>
 				<div className="post-card-info">
 					<ul className="list-inline">
 						<li>
 							<a href="./author.html">
-								<img src="/src/assets/others/1.jpg" alt="" />
+								<img src={author.authorImage} alt="" />
 							</a>
 						</li>
 						<li>
-							<a href="./author.html">David Smith</a>
+							<a href="./author.html">{author.authorName}</a>
 						</li>
 						<li className="dot"></li>
-						<li>January 15, 2021</li>
+						<li>{day}</li>
 					</ul>
 				</div>
 			</div>
