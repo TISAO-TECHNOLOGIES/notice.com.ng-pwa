@@ -47,8 +47,8 @@ const Navigation = () => {
 					{/* <!--logo--> */}
 					<div className="logo">
 						<a href="./index.html">
-							<img src="./assets/img/logo-dark.png" alt="" className="logo-dark" />
-							<img src="./assets/img/logo-white.png" alt="" className="logo-white" />
+							<img src="/src/assets/img/logo-dark.png" alt="" className="logo-dark" />
+							<img src="/src/assets/img/logo-white.png" alt="" className="logo-white" />
 						</a>
 					</div>
 					{/* <!--/--> */}

@@ -12,7 +12,9 @@ const RootLayout = () => {
 
 				<Navigation />
 
-				<Outlet />
+				<main  className="text-left">
+					<Outlet />
+				</main>
 			</div>
 		</>
 	);

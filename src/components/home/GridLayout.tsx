@@ -1,5 +1,5 @@
 import { PostData } from "../../data/post";
-import PostCard from "./PostCard";
+import PostCard from "../shared/PostCard";
 
 const GridLayout = () => {
 	return (

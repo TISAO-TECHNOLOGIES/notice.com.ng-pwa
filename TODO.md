@@ -1,3 +1,11 @@
 - [ ] Remove switch.js (already implemented in Navigation.tsx)
 - [x] Declare the right data type for Naviation elements
 - [ ] Fix the blank carousel pages
+- [ ] Setup pagination component
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
