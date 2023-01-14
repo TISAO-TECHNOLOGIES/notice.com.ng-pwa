@@ -1,27 +1,12 @@
-// import React, { useEffect } from "react";
 import Carousel from "../components/home/Carousel";
 import Footer from "../components/Footer";
 import GridLayout from "../components/home/GridLayout";
 import NewsLetter from "../components/home/NewsLetter";
-import ScriptResource from "../hooks/scriptResource";
-// import SearchForm from "../components/SearchForm";
+// import ScriptResource from "../hooks/scriptResource";
 
 const HomeScreen = () => {
-	// const scriptResource = (path: String) => {
-	// 	const script = document.createElement("script");
-	// 	script.src = `${path}`;
-	// 	// script.src = "/src/assets/js/owl.carousel.min.js";
-	// 	script.async = true;
-	// 	document.body.appendChild(script);
-	// };
-
-	// useEffect(() => {
-	// 	scriptResource("/src/assets/js/owl.carousel.min.js");
-	// 	scriptResource("/src/assets/js/main.js");
-	// }, []);
-
-	ScriptResource("/src/assets/js/owl.carousel.min.js");
-	ScriptResource("/src/assets/js/main.js");
+	// ScriptResource("/src/assets/js/owl.carousel.min.js");
+	// ScriptResource("/src/assets/js/main.js");
 
 	return (
 		<>
@@ -47,8 +32,6 @@ const HomeScreen = () => {
 			<NewsLetter />
 
 			<Footer />
-
-			{/* <SearchForm /> */}
 		</>
 	);
 };

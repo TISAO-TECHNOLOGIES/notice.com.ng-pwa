@@ -1,4 +1,3 @@
-import React from "react";
 import { PostData } from "../../data/post";
 import PostCard from "./PostCard";
 

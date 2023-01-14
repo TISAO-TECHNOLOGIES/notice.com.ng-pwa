@@ -1,23 +1,37 @@
 import React from "react";
-// import { Helmet } from "react-helmet";
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from "react-router-dom";
 import "./App.css";
-import Navigation from "./components/Navigation";
-import HomeScreen from "./screens/HomeScreen";
+import ScriptResource from "./hooks/scriptResource";
+// pages
+import Blog from "./pages/Blog";
+import HomeScreen from "./pages/HomeScreen";
+// layout
+import RootLayout from "./layouts/RootLayout";
+
+const router = createBrowserRouter(
+	createRoutesFromElements(
+		<Route path="/" element={<RootLayout />}>
+			<Route index element={<HomeScreen />} />
+			<Route path="/blog" element={<Blog />} />
+		</Route>
+	)
+);
 
 function App() {
+	// scripts
+	ScriptResource("/src/assets/js/jquery-3.5.0.min.js");
+	ScriptResource("/src/assets/js/popper.min.js");
+	ScriptResource("/src/assets/js/bootstrap.min.js");
+	// JS Plugins
+	ScriptResource("/src/assets/js/ajax-contact.js");
+	ScriptResource("/src/assets/js/owl.carousel.min.js");
+	ScriptResource("/src/assets/js/medium-zoom.min.js");
+	// Main JS
+	ScriptResource("/src/assets/js/main.js");
+
 	return (
 		<>
-			<div className="App">
-				{/* loading */}
-				<div className="loading" style={{ display: "none" }}>
-					<div className="circle"></div>
-				</div>
-
-				<Navigation />
-
-				{/* pages */}
-				<HomeScreen />
-			</div>
+			<RouterProvider router={router} />
 		</>
 	);
 }
