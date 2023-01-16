@@ -1,13 +1,12 @@
-import React from "react";
 import AuthorWidget from "../components/author/AuthorWidget";
 import MasonaryLayout from "../components/author/MasonaryLayout";
 
 const Author = () => {
 	return (
 		<>
-      <AuthorWidget />
-      
-      <MasonaryLayout />
+			<AuthorWidget />
+
+			<MasonaryLayout />
 		</>
 	);
 };

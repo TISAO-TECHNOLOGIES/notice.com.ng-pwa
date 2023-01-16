@@ -7,6 +7,7 @@ import Blog from "./pages/Blog";
 import HomeScreen from "./pages/HomeScreen";
 import Post from "./pages/Post";
 import Author from "./pages/Author";
+import NotFound from "./pages/NotFound";
 // layout
 import RootLayout from "./layouts/RootLayout";
 import PostLayout from "./layouts/PostLayout";
@@ -21,6 +22,8 @@ const router = createBrowserRouter(
 			<Route path="/post" element={<PostLayout />}>
 				<Route index element={<Post />} />
 			</Route>
+
+			<Route path="*" element={<NotFound />} />
 		</Route>
 	)
 );
