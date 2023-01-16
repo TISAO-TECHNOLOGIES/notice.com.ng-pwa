@@ -1,7 +1,5 @@
 import Carousel from "../components/home/Carousel";
-import Footer from "../components/Footer";
 import GridLayout from "../components/home/GridLayout";
-import NewsLetter from "../components/home/NewsLetter";
 // import ScriptResource from "../hooks/scriptResource";
 
 const HomeScreen = () => {
@@ -28,10 +26,6 @@ const HomeScreen = () => {
 			</div>
 
 			<GridLayout />
-
-			<NewsLetter />
-
-			<Footer />
 		</>
 	);
 };

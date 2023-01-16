@@ -5,14 +5,20 @@ import ScriptResource from "./hooks/scriptResource";
 // pages
 import Blog from "./pages/Blog";
 import HomeScreen from "./pages/HomeScreen";
+import Post from "./pages/Post";
 // layout
 import RootLayout from "./layouts/RootLayout";
+import PostLayout from "./layouts/PostLayout";
 
 const router = createBrowserRouter(
 	createRoutesFromElements(
 		<Route path="/" element={<RootLayout />}>
 			<Route index element={<HomeScreen />} />
 			<Route path="/blog" element={<Blog />} />
+
+			<Route path="/post" element={<PostLayout />}>
+				<Route index element={<Post />} />
+			</Route>
 		</Route>
 	)
 );

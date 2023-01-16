@@ -1,9 +1,9 @@
 export const BlogData = [
 	{
 		id: "1",
-		postImage: "/src/assets/others/7.jpg",
+		postImage: "/src/assets/others/6.jpg",
 		category: "food",
-		title: "Dinner Recipes for a Date Night at Home",
+		title: "Top 10 Forests That Every Nature Lover Must Visit",
 		description:
 			"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe nobis, consequatur eum voluptate debitis, quis impedit minima eligendi quaerat ea maxime labore accusamus quibusdam placeat sit culpa nihil officia amet ipsam autem laboriosam. Eveniet obcaecati necessitatibus nobis quia perspiciatis aperiam!",
 		author: {
@@ -102,5 +102,18 @@ export const BlogData = [
 			authorName: "David smith",
 		},
 		day: "January 15, 2021",
+	},
+	{
+		id: "9",
+		postImage: "/src/assets/others/7.jpg",
+		category: "food",
+		title: "Dinner Recipes for a Date Night at Home",
+		description:
+			"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe nobis, consequatur eum voluptate debitis, quis impedit minima eligendi quaerat ea maxime labore accusamus quibusdam placeat sit culpa nihil officia amet ipsam autem laboriosam. Eveniet obcaecati necessitatibus nobis quia perspiciatis aperiam!",
+		author: {
+			authorImage: "/src/assets/others/1.jpg",
+			authorName: "David smith",
+		},
+		day: "January 12, 2021",
 	},
 ];

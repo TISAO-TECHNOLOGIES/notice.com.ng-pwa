@@ -1,9 +1,10 @@
 import { BlogData } from "../../data/blog";
 import PostCard from "../shared/PostCard";
-import InstagramWidget from "./InstagramWidget";
-import Widget from "./Widget";
-import WidgetCategory from "./WidgetCategory";
-import WidgetLatestsPost from "./WidgetLatestsPost";
+import BlogFirstPost from "./BlogFirstPost";
+import InstagramWidget from "../shared/widgets/InstagramWidget";
+import Widget from "../shared/widgets/Widget";
+import WidgetCategory from "../shared/widgets/WidgetCategory";
+import WidgetLatestsPost from "../shared/widgets/WidgetLatestsPost";
 
 const BlogGrid = () => {
 	return (
@@ -11,12 +12,14 @@ const BlogGrid = () => {
 			<section className="blog-grid">
 				<div className="container-fluid">
 					<div className="row">
+						{/* POST COLUMN */}
 						<div className="col-lg-8 mt-30">
 							<div className="row">
 								{/* Post */}
-								{BlogData.map((post) => (
-									<div key={post.id} className="col-lg-6 col-md-6">
-										<PostCard
+								{BlogData.map((post) =>
+									post.id === "1" ? (
+										<BlogFirstPost
+											key={post.id}
 											postImage={post.postImage}
 											category={post.category}
 											title={post.title}
@@ -27,8 +30,22 @@ const BlogGrid = () => {
 											}}
 											day={post.day}
 										/>
-									</div>
-								))}
+									) : (
+										<div key={post.id} className="col-lg-6 col-md-6">
+											<PostCard
+												postImage={post.postImage}
+												category={post.category}
+												title={post.title}
+												description={post.description}
+												author={{
+													authorImage: post.author.authorImage,
+													authorName: post.author.authorName,
+												}}
+												day={post.day}
+											/>
+										</div>
+									)
+								)}
 
 								{/* <!--pagination--> */}
 								<div className="col-lg-12">
@@ -58,6 +75,7 @@ const BlogGrid = () => {
 							</div>
 						</div>
 
+						{/* WIDGET COLUMN */}
 						<div className="col-lg-4 max-width">
 							{/* <!--widget-latest-posts--> */}
 							<Widget title="Latest Posts">
@@ -99,14 +117,6 @@ const BlogGrid = () => {
 									</ul>
 								</div>
 							</Widget>
-							{/* <!--/--> */}
-
-							{/* <!--widget-ads--> */}
-							<div className="widget-ads">
-								<a href="./blog-grid.html#">
-									<img src="/src/assets/others/ads2.jpg" alt="" />
-								</a>
-							</div>
 							{/* <!--/--> */}
 						</div>
 					</div>

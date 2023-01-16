@@ -1,4 +1,6 @@
 import { Outlet } from "react-router-dom";
+import Footer from "../components/Footer";
+import NewsLetter from "../components/home/NewsLetter";
 import Navigation from "../components/Navigation";
 
 const RootLayout = () => {
@@ -14,7 +16,11 @@ const RootLayout = () => {
 
 				<main  className="text-left">
 					<Outlet />
-				</main>
+        </main>
+
+        <NewsLetter />
+        
+        <Footer />
 			</div>
 		</>
 	);
