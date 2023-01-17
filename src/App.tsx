@@ -8,6 +8,7 @@ import Post from "./pages/Post";
 import Author from "./pages/Author";
 import NotFound from "./pages/NotFound";
 import Contact from "./pages/Contact";
+import About from "./pages/About";
 // layout
 import RootLayout from "./layouts/RootLayout";
 import PostLayout from "./layouts/PostLayout";
@@ -19,6 +20,7 @@ const router = createBrowserRouter(
 			<Route path="/blog" element={<Blog />} />
 			<Route path="/author" element={<Author />} />
 			<Route path="/contact" element={<Contact />} />
+			<Route path="/about" element={<About />} />
 
 			<Route path="/post" element={<PostLayout />}>
 				<Route index element={<Post />} />
