@@ -10,7 +10,6 @@ const PostWidgets = () => {
 		<div className="col-lg-4 max-width">
 			{/* <!--widget-author--> */}
 			<AuthorWidget />
-			{/* <!--/--> */}
 
 			{/* <!--widget-latest-posts--> */}
 			<Widget title="Latest Posts">
@@ -20,7 +19,6 @@ const PostWidgets = () => {
 					))}
 				</ul>
 			</Widget>
-			{/* <!--/--> */}
 
 			{/* <!--widget-categories--> */}
 			<Widget title="Categories">
@@ -30,7 +28,6 @@ const PostWidgets = () => {
 					))}
 				</ul>
 			</Widget>
-			{/* <!--/--> */}
 
 			{/* <!--widget-instagram--> */}
 			<Widget title="Instagram">

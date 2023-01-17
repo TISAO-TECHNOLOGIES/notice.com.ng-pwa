@@ -1,4 +1,3 @@
-import React from "react";
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from "react-router-dom";
 import "./App.css";
 import ScriptResource from "./hooks/scriptResource";
@@ -8,6 +7,7 @@ import HomeScreen from "./pages/HomeScreen";
 import Post from "./pages/Post";
 import Author from "./pages/Author";
 import NotFound from "./pages/NotFound";
+import Contact from "./pages/Contact";
 // layout
 import RootLayout from "./layouts/RootLayout";
 import PostLayout from "./layouts/PostLayout";
@@ -18,6 +18,7 @@ const router = createBrowserRouter(
 			<Route index element={<HomeScreen />} />
 			<Route path="/blog" element={<Blog />} />
 			<Route path="/author" element={<Author />} />
+			<Route path="/contact" element={<Contact />} />
 
 			<Route path="/post" element={<PostLayout />}>
 				<Route index element={<Post />} />
