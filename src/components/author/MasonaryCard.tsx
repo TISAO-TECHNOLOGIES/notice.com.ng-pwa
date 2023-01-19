@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
 interface IPost {
 	postImage: string;
@@ -21,27 +21,27 @@ const MasonaryCard = ({ postImage, category, title, description, author, day }: 
 		<div className="card">
 			<div className="post-card post-full">
 				<div className="post-card-image">
-					<a href="./post-default.html">
+					<Link to="/post">
 						<img src={postImage} alt="" />
-					</a>
+					</Link>
 				</div>
 				<div className="post-card-content">
-					<a href="./blog-grid.html" className="categorie">
+					<Link to="/blog" className="categorie">
 						{category}
-					</a>
+					</Link>
 					<h5>
-						<a href="./post-default.html">{title}</a>
+						<Link to="/post">{title}</Link>
 					</h5>
 					<p>{truncate(description, 80)}</p>
 					<div className="post-card-info">
 						<ul className="list-inline">
 							<li>
-								<a href="./author.html">
+								<Link to="">
 									<img src={author.authorImage} alt="" />
-								</a>
+								</Link>
 							</li>
 							<li>
-								<a href="./author.html">{author.authorName}</a>
+								<span className="author">{author.authorName}</span>
 							</li>
 							<li className="dot"></li>
 							<li>{day}</li>

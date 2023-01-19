@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
 const AuthorWidget = () => {
 	return (
@@ -7,9 +7,9 @@ const AuthorWidget = () => {
 				<div className="row">
 					<div className="col-lg-12">
 						<div className="widget-author inner-width">
-							<a href="./author.html" className="image">
+							<div className="image">
 								<img src="/src/assets/others/1.jpg" alt="" />
-							</a>
+							</div>
 							<h6>
 								<span>Hi, I'm David Smith</span>
 							</h6>
@@ -22,29 +22,29 @@ const AuthorWidget = () => {
 							<div className="social-media">
 								<ul className="list-inline">
 									<li>
-										<a href="./author.html#" className="color-facebook">
+										<Link to="" className="color-facebook">
 											<i className="fab fa-facebook"></i>
-										</a>
+										</Link>
 									</li>
 									<li>
-										<a href="./author.html#" className="color-instagram">
+										<Link to="" className="color-instagram">
 											<i className="fab fa-instagram"></i>
-										</a>
+										</Link>
 									</li>
 									<li>
-										<a href="./author.html#" className="color-twitter">
+										<Link to="" className="color-twitter">
 											<i className="fab fa-twitter"></i>
-										</a>
+										</Link>
 									</li>
 									<li>
-										<a href="./author.html#" className="color-youtube">
+										<Link to="" className="color-youtube">
 											<i className="fab fa-youtube"></i>
-										</a>
+										</Link>
 									</li>
 									<li>
-										<a href="./author.html#" className="color-pinterest">
+										<Link to="" className="color-pinterest">
 											<i className="fab fa-pinterest"></i>
-										</a>
+										</Link>
 									</li>
 								</ul>
 							</div>

@@ -20,22 +20,22 @@ const PostCard = ({ postImage, category, title, description, author, day }: IPos
 	return (
 		<div className="post-card">
 			<div className="post-card-image">
-				<Link to="blog">
+				<Link to="/post">
 					<img src={postImage} alt="" />
 				</Link>
 			</div>
 			<div className="post-card-content">
-				<Link to="blog" className="categorie">
+				<Link to="/blog" className="categorie">
 					{category}
 				</Link>
 				<h5>
-					<Link to="post">{title}</Link>
+					<Link to="/post">{title}</Link>
 				</h5>
 				<p>{truncate(description, 80)}</p>
 				<div className="post-card-info">
 					<ul className="list-inline">
 						<li>
-							<Link to="author">
+							<Link to="/author">
 								<img src={author.authorImage} alt="" />
 							</Link>
 						</li>

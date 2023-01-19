@@ -1190,6 +1190,7 @@ input:checked + .slider:before {
 }
 
 .widget-author .image {
+  margin: 0 auto 15px;
 	position: relative;
 	width: 100px;
 	height: 100px;
