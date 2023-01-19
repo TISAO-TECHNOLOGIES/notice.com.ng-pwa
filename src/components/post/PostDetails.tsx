@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
 const PostDetails = () => {
 	return (
@@ -11,19 +11,19 @@ const PostDetails = () => {
 
 				{/* Post heading & Intro */}
 				<div className="post-single-content">
-					<a href="./blog-grid.html" className="categorie">
+					<Link to="/blog" className="categorie">
 						travel
-					</a>
+					</Link>
 					<h4>What the secrets you will know about jordan petra if visit it one day?</h4>
 					<div className="post-single-info">
 						<ul className="list-inline">
 							<li>
-								<a href="./author.html">
+								<Link to="/author">
 									<img src="/src/assets/others/1.jpg" alt="" />
-								</a>
+								</Link>
 							</li>
 							<li>
-								<a href="./author.html">David Smith</a>
+								<Link to="/author">David Smith</Link>
 							</li>
 							<li className="dot"></li>
 							<li>January 15, 2021</li>
@@ -131,60 +131,45 @@ const PostDetails = () => {
 					</p>
 				</div>
 
-        {/* tags */}
+				{/* tags */}
 				<div className="post-single-footer">
 					<div className="tags">
 						<ul className="list-inline">
 							{[1, 2, 3, 4, 5, 6].map((tag) => (
 								<li key={tag}>
-									<a href="./blog-grid.html">Travel</a>
+									<Link to="">Travel</Link>
 								</li>
 							))}
-							{/* <li>
-								<a href="./blog-grid.html">Travel</a>
-							</li>
-							<li>
-								<a href="./blog-grid.html">Nature</a>
-							</li>
-							<li>
-								<a href="./blog-grid.html">tips</a>
-							</li>
-							<li>
-								<a href="./blog-grid.html">forest</a>
-							</li>
-							<li>
-								<a href="./blog-grid.html">beach</a>
-							</li> */}
 						</ul>
-          </div>
-          
-          {/* social media */}
+					</div>
+
+					{/* social media */}
 					<div className="social-media">
 						<ul className="list-inline">
 							<li>
-								<a href="./post-default.html#" className="color-facebook">
+								<Link to="" className="color-facebook">
 									<i className="fab fa-facebook"></i>
-								</a>
+								</Link>
 							</li>
 							<li>
-								<a href="./post-default.html#" className="color-instagram">
+								<Link to="" className="color-instagram">
 									<i className="fab fa-instagram"></i>
-								</a>
+								</Link>
 							</li>
 							<li>
-								<a href="./post-default.html#" className="color-twitter">
+								<Link to="" className="color-twitter">
 									<i className="fab fa-twitter"></i>
-								</a>
+								</Link>
 							</li>
 							<li>
-								<a href="./post-default.html#" className="color-youtube">
+								<Link to="" className="color-youtube">
 									<i className="fab fa-youtube"></i>
-								</a>
+								</Link>
 							</li>
 							<li>
-								<a href="./post-default.html#" className="color-pinterest">
+								<Link to="" className="color-pinterest">
 									<i className="fab fa-pinterest"></i>
-								</a>
+								</Link>
 							</li>
 						</ul>
 					</div>

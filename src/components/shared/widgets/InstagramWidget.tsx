@@ -1,11 +1,11 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
 const InstagramWidget = () => {
 	return (
 		<li>
-			<a className="image" href="./blog-grid.html#">
+			<Link className="image" to="">
 				<img src="/src/assets/others/1(3).jpg" alt="" />
-			</a>
+			</Link>
 		</li>
 	);
 };

@@ -12,10 +12,10 @@ const Comments = () => {
 				</ul>
 				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus at doloremque adipisci eum placeat quod non fugiat aliquid sit similique!</p>
 				<div>
-					<a href="./post-default.html#" className="link">
+					{/* <a href="./post-default.html#" className="link">
 						{" "}
 						<i className="arrow_back"></i> Reply
-					</a>
+					</a> */}
 				</div>
 			</div>
 		</li>

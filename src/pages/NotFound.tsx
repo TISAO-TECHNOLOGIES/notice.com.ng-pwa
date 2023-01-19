@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
 const NotFound = () => {
 	return (
@@ -9,9 +9,9 @@ const NotFound = () => {
 						<h1>404</h1>
 						<h3>Page Not Found.</h3>
 						<p>It looks like nothing was found at this location.</p>
-						<a href="./index.html" className="btn-custom">
+						<Link to="/" className="btn-custom">
 							Go back to Home
-						</a>
+						</Link>
 					</div>
 				</div>
 			</div>

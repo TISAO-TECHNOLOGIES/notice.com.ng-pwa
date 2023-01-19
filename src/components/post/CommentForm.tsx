@@ -3,7 +3,7 @@ import React from "react";
 const CommentForm = () => {
 	return (
 		<>
-			<form className="widget-form" action="./post-default.html#" method="POST" id="main_contact_form">
+			<form className="widget-form" action="/post" method="POST" id="main_contact_form">
 				<p>Your email adress will not be published ,Requied fileds are marked*.</p>
 				<div className="alert alert-success contact_msg" style={{ display: "none" }} role="alert">
 					Your message was sent successfully.
