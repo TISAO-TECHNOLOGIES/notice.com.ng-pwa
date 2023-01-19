@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 interface ICarousel {
 	bgImage: string;
@@ -23,21 +24,21 @@ const OwlItem = ({ bgImage, category, title, author, day, time }: ICarousel) => 
 				<div className="row">
 					<div className="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
 						<div className="hero-content">
-							<a href="./blog-grid.html" className="categorie">
+							<Link to="/blog" className="categorie">
 								{category}
-							</a>
+							</Link>
 							<h2>
-								<a href="./post-default.html">{title} </a>
+								<Link to="/post">{title} </Link>
 							</h2>
 							<div className="post-card-info">
 								<ul className="list-inline">
 									<li>
-										<a href="./author.html">
+										<Link to="/author">
 											<img src={author.authorImage} alt="" />
-										</a>
+										</Link>
 									</li>
 									<li>
-										<a href="./author.html">{author.authorName}</a>
+										<Link to="/author">{author.authorName}</Link>
 									</li>
 									<li className="dot"></li>
 									<li>{day}</li>
