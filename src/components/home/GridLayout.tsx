@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { PostData } from "../../data/post";
 import PostCard from "../shared/PostCard";
 
@@ -7,7 +8,7 @@ const GridLayout = () => {
 			<section className="mt-80">
 				<div className="container-fluid">
 					<div className="row">
-						{/* <!--Post--> */}
+						{/* POST */}
 						{PostData.map((card) => (
 							<div key={card.id} className="col-lg-4 col-md-6">
 								<PostCard
@@ -24,35 +25,35 @@ const GridLayout = () => {
 							</div>
 						))}
 
-						{/* <!--ads-block--> */}
-						<div className="col-lg-12">
+						{/* ADS BLOCK */}
+						{/* <div className="col-lg-12">
 							<div className="ads-block">
 								<a href="./#">
 									<img src="/assets/others/ads1.jpg" alt="" />
 								</a>
 							</div>
-						</div>
+						</div> */}
 
-						{/* <!--pagination--> */}
+						{/* PAGINATION */}
 						<div className="col-lg-12">
 							<div className="pagination ">
 								<ul className="list-inline">
 									<li className="active">
-										<a href="./#">1</a>
+										<Link to="">1</Link>
 									</li>
 									<li>
-										<a href="./#">2</a>
+										<Link to="">2</Link>
 									</li>
 									<li>
-										<a href="./#">3</a>
+										<Link to="">3</Link>
 									</li>
 									<li>
-										<a href="./#">4</a>
+										<Link to="">4</Link>
 									</li>
 									<li>
-										<a href="./#">
+										<Link to="">
 											<i className="arrow_carrot-2right"></i>
-										</a>
+										</Link>
 									</li>
 								</ul>
 							</div>
