@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { BlogData } from "../../data/blog";
 import PostCard from "../shared/PostCard";
 import BlogFirstPost from "./BlogFirstPost";
@@ -52,21 +53,21 @@ const BlogGrid = () => {
 									<div className="pagination mt--10">
 										<ul className="list-inline">
 											<li className="active">
-												<a href="./blog-grid.html#">1</a>
+												<Link to="">1</Link>
 											</li>
 											<li>
-												<a href="./blog-grid.html#">2</a>
+												<Link to="">2</Link>
 											</li>
 											<li>
-												<a href="./blog-grid.html#">3</a>
+												<Link to="">3</Link>
 											</li>
 											<li>
-												<a href="./blog-grid.html#">4</a>
+												<Link to="">4</Link>
 											</li>
 											<li>
-												<a href="./blog-grid.html#">
+												<Link to="">
 													<i className="arrow_carrot-2right"></i>
-												</a>
+												</Link>
 											</li>
 										</ul>
 									</div>

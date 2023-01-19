@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import BlogGrid from "../components/blog/BlogGrid";
 
 const Blog = () => {
@@ -11,7 +11,7 @@ const Blog = () => {
 						<div className="col-lg-8">
 							<div className="categorie-title">
 								<small>
-									<a href="./index.html">Home</a>
+									<Link to="/">Home</Link>
 									<span className="arrow_carrot-right"></span> Food
 								</small>
 								<h3>
