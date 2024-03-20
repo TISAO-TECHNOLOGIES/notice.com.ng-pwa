@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const PostDirection = () => {
 	return (
@@ -9,17 +10,17 @@ const PostDirection = () => {
 					<div className="widget-next-post">
 						<div className="small-post">
 							<div className="image">
-								<a href="./post-default.html">
+								<Link to="/post">
 									<img src="/src/assets/others/1(1).jpg" alt="..." />
-								</a>
+								</Link>
 							</div>
 							<div className="content">
 								<div>
-									<a className="link" href="./post-default.html">
+									<Link className="link" to="/post">
 										<i className="arrow_left"></i>Previous post
-									</a>
+									</Link>
 								</div>
-								<a href="./post-default.html">7 Healty Dinner Recipes for a Date Night at Home</a>
+								<Link to="/post">7 Healty Dinner Recipes for a Date Night at Home</Link>
 							</div>
 						</div>
 					</div>
@@ -32,18 +33,18 @@ const PostDirection = () => {
 					<div className="widget-previous-post">
 						<div className="small-post">
 							<div className="image">
-								<a href="./post-default.html">
+								<Link to="/post">
 									<img src="/src/assets/others/2.jpg" alt="..." />
-								</a>
+								</Link>
 							</div>
 							<div className="content">
 								<div>
-									<a className="link" href="./post-default.html">
+									<Link className="link" to="/post">
 										Next post
 										<i className="arrow_right"></i>
-									</a>
+									</Link>
 								</div>
-								<a href="./post-default.html">How to Choose Outfits for Work for woman and men</a>
+								<Link to="/post">How to Choose Outfits for Work for woman and men</Link>
 							</div>
 						</div>
 					</div>

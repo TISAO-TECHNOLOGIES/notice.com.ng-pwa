@@ -1,11 +1,11 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
 const WidgetCategory = () => {
 	return (
 		<li>
-			<a href="./blog-grid.html#" className="categorie">
+			<Link to="/blog" className="categorie">
 				Livestyle
-			</a>
+			</Link>
 			<span className="ml-auto">22 Posts</span>
 		</li>
 	);

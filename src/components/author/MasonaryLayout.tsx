@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { PostData } from "../../data/post";
 import MasonaryCard from "./MasonaryCard";
 
@@ -29,21 +30,21 @@ const MasonaryLayout = () => {
 						<div className="pagination mt-30">
 							<ul className="list-inline">
 								<li className="active">
-									<a href="./author.html#">1</a>
+									<Link to="">1</Link>
 								</li>
 								<li>
-									<a href="./author.html#">2</a>
+									<Link to="">2</Link>
 								</li>
 								<li>
-									<a href="./author.html#">3</a>
+									<Link to="">3</Link>
 								</li>
 								<li>
-									<a href="./author.html#">4</a>
+									<Link to="">4</Link>
 								</li>
 								<li>
-									<a href="./author.html#">
+									<Link to="">
 										<i className="arrow_carrot-2right"></i>
-									</a>
+									</Link>
 								</li>
 							</ul>
 						</div>

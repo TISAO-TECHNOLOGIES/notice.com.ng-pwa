@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import InstagramWidget from "../shared/widgets/InstagramWidget";
 import Widget from "../shared/widgets/Widget";
 import WidgetCategory from "../shared/widgets/WidgetCategory";
@@ -45,7 +46,7 @@ const PostWidgets = () => {
 					<ul className="list-inline">
 						{[1, 2, 3, 4, 5, 6, 7, 8, 9].map((tag) => (
 							<li key={tag}>
-								<a href="./blog-grid.html">Travel</a>
+								<Link to="">Travel</Link>
 							</li>
 						))}
 					</ul>
