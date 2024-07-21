@@ -21,6 +21,7 @@ const GridLayout = () => {
 										authorName: card.author.authorName,
 									}}
 									day={card.day}
+									slug={card.slug}
 								/>
 							</div>
 						))}
@@ -57,7 +58,6 @@ const GridLayout = () => {
 									</li>
 								</ul>
 							</div>
-							{/* <!--/--> */}
 						</div>
 					</div>
 				</div>

@@ -11,9 +11,10 @@ interface IPost {
 		authorName: string;
 	};
 	day: string;
+	slug: string;
 }
 
-const BlogFirstPost = ({ postImage, category, title, description, author, day }: IPost) => {
+const BlogFirstPost = ({ postImage, category, title, description, author, day, slug }: IPost) => {
 	const truncate = (word: string, n: number) => {
 		return word?.length > n ? word.substr(0, n - 1) + "..." : word;
 	};
@@ -31,13 +32,13 @@ const BlogFirstPost = ({ postImage, category, title, description, author, day }:
 						{category}
 					</Link>
 					<h5>
-						<Link to="/post">{title}</Link>
+						<Link to="/post?slug={slug}">{title}</Link>
 					</h5>
 					<p>{truncate(description, 80)}</p>
 					<div className="post-card-info">
 						<ul className="list-inline">
 							<li>
-								<Link to="/author">
+								<Link to="/author?slug={slug}">
 									<img src={author.authorImage} alt="" />
 								</Link>
 							</li>

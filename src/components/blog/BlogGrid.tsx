@@ -30,6 +30,7 @@ const BlogGrid = () => {
 												authorName: post.author.authorName,
 											}}
 											day={post.day}
+											slug={post.slug}
 										/>
 									) : (
 										<div key={post.id} className="col-lg-6 col-md-6">
@@ -43,6 +44,7 @@ const BlogGrid = () => {
 													authorName: post.author.authorName,
 												}}
 												day={post.day}
+												slug={post.slug}
 											/>
 										</div>
 									)

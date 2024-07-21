@@ -11,6 +11,7 @@ export const PostData = [
 			authorName: "David smith",
 		},
 		day: "January 12, 2021",
+		slug: "How-to-Choose-Outfit-for-Work-for-woman-and-men",
 	},
 	{
 		id: "2",
@@ -24,6 +25,7 @@ export const PostData = [
 			authorName: "David smith",
 		},
 		day: "January 15, 2021",
+		slug: "10-Best-and-Most-Beautiful-Places-to-Visit-in-Italy",
 	},
 	{
 		id: "3",
@@ -37,6 +39,8 @@ export const PostData = [
 			authorName: "David smith",
 		},
 		day: "January 15, 2021",
+		slug:"Enjoy-My-Favourite-Molten-Chocolate-Cake",
+
 	},
 	{
 		id: "4",
@@ -50,6 +54,8 @@ export const PostData = [
 			authorName: "David smith",
 		},
 		day: "January 15, 2021",
+		slug:"Top-10-Forests-That-Every-Nature-Lover-Must-Visit",
+
 	},
 	{
 		id: "5",
@@ -63,6 +69,8 @@ export const PostData = [
 			authorName: "David smith",
 		},
 		day: "January 15, 2021",
+		slug:"How-To-Prepare-A-Royal-Healthy-Breakfast-At-Home",
+
 	},
 	{
 		id: "6",
@@ -76,6 +84,8 @@ export const PostData = [
 			authorName: "David smith",
 		},
 		day: "January 15, 2021",
+		slug:"20-Cute-Girly-Outfits-to-Buy-for-the-First-Day-of-Winter",
+
 	},
 	{
 		id: "7",
@@ -89,6 +99,8 @@ export const PostData = [
 			authorName: "David smith",
 		},
 		day: "January 15, 2021",
+		slug:"How-to-wear-when-you-travel-to-Montain",
+
 	},
 	{
 		id: "8",
@@ -102,6 +114,8 @@ export const PostData = [
 			authorName: "David smith",
 		},
 		day: "January 15, 2021",
+		slug:"How-to-make-morrocos-pancake-in-five-steps",
+
 	},
 	{
 		id: "9",
@@ -115,5 +129,6 @@ export const PostData = [
 			authorName: "David smith",
 		},
 		day: "January 15, 2021",
+		slug: "10-Easy-Tips-for-You-to-traveling-around-the-world",
 	},
 ];
