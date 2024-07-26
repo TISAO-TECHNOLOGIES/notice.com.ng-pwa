@@ -14,7 +14,7 @@ const MasonaryLayout = () => {
 							{PostData.map((post) => (
 								<MasonaryCard
 									key={post.id}
-									postImage={post.postImage}
+									thumbImg={post.thumbImg}
 									category={post.category}
 									title={post.title}
 									description={post.description}

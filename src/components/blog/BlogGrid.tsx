@@ -21,7 +21,7 @@ const BlogGrid = () => {
 									post.id === "1" ? (
 										<BlogFirstPost
 											key={post.id}
-											postImage={post.postImage}
+											thumbImg={post.thumbImg}
 											category={post.category}
 											title={post.title}
 											description={post.description}
@@ -35,7 +35,7 @@ const BlogGrid = () => {
 									) : (
 										<div key={post.id} className="col-lg-6 col-md-6">
 											<PostCard
-												postImage={post.postImage}
+												thumbImg={post.thumbImg}
 												category={post.category}
 												title={post.title}
 												description={post.description}

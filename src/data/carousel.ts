@@ -1,7 +1,7 @@
 export const CarouselData = [
 	{
 		id: "1",
-		postImage: "/src/assets/others/25.jpg",
+		thumbImg: "/src/assets/others/25.jpg",
 		category: "Livestyle",
 		title: "How to Choose Outfits for Work for woman and men",
 		description:
@@ -17,7 +17,7 @@ export const CarouselData = [
 	},
 	{
 		id: "2",
-		postImage: "/src/assets/others/23.jpg",
+		thumbImg: "/src/assets/others/23.jpg",
 		category: "travel",
 		title: "10 Best and Most Beautiful Places to Visit in Italy",
 		description:
@@ -33,7 +33,7 @@ dateModified: "January 15, 2021",
 	},
 	{
 		id: "3",
-		postImage: "/src/assets/others/24.jpg",
+		thumbImg: "/src/assets/others/24.jpg",
 		category: "Food",
 		title: "Enjoy My Favourite Molten Chocolate Cake",
 		description:
@@ -50,7 +50,7 @@ dateModified: "January 15, 2021",
 	},
 	{
 		id: "4",
-		postImage: "/src/assets/others/21.jpg",
+		thumbImg: "/src/assets/others/21.jpg",
 		category: "Travel",
 		title: "Top 10 Forests That Every Nature Lover Must Visit",
 		description:
@@ -67,7 +67,7 @@ dateModified: "January 15, 2021",
 	},
 	{
 		id: "5",
-		postImage: "/src/assets/others/22.jpg",
+		thumbImg: "/src/assets/others/22.jpg",
 		category: "Food",
 		title: "How To Prepare A Royal Healthy Breakfast At Home",
 		description:
@@ -84,7 +84,7 @@ dateModified: "January 15, 2021",
 	},
 	{
 		id: "6",
-		postImage: "/src/assets/others/27.jpg",
+		thumbImg: "/src/assets/others/27.jpg",
 		category: "livestyle",
 		title: "20+ Cute Girly Outfits to Buy for the First Day of Winter",
 		description:
@@ -101,7 +101,7 @@ dateModified: "January 15, 2021",
 	},
 	{
 		id: "7",
-		postImage: "/src/assets/others/26.jpg",
+		thumbImg: "/src/assets/others/26.jpg",
 		category: "livestyle",
 		title: "How to wear when you travel to Montain ?",
 		description:
@@ -118,7 +118,7 @@ dateModified: "January 15, 2021",
 	},
 	{
 		id: "8",
-		postImage: "/src/assets/others/28.jpg",
+		thumbImg: "/src/assets/others/28.jpg",
 		category: "Food",
 		title: "How to make morroco's pancake in five steps?",
 		description:
@@ -136,7 +136,7 @@ dateModified: "January 15, 2021",
 	},
 	{
 		id: "9",
-		postImage: "/src/assets/others/20.jpg",
+		thumbImg: "/src/assets/others/20.jpg",
 		category: "travel",
 		title: "10 Easy Tips for You to traveling around the world!",
 		description:

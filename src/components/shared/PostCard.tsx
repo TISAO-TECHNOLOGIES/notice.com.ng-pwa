@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 interface IPost {
-	postImage: string;
+	thumbImg: string;
 	category: string;
 	title: string;
 	description: string;
@@ -13,7 +13,7 @@ interface IPost {
 	slug: string;
 }
 
-const PostCard = ({ postImage, category, title, description, author, day, slug }: IPost) => {
+const PostCard = ({ thumbImg, category, title, description, author, day, slug }: IPost) => {
 	const truncate = (word: string, n: number) => {
 		return word?.length > n ? word.substr(0, n - 1) + "..." : word;
 	};
@@ -22,7 +22,7 @@ const PostCard = ({ postImage, category, title, description, author, day, slug }
 		<div className="post-card">
 			<div className="post-card-image">
 				<Link to="/post">
-					<img src={postImage} alt="" />
+					<img src={thumbImg} alt="" />
 				</Link>
 			</div>
 			<div className="post-card-content">
