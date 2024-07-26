@@ -10,7 +10,7 @@ interface ICarousel {
 		authorName: string;
 	};
 	day: string;
-	time: number;
+	time: string;
 }
 
 const OwlItem = ({ bgImage, category, title, author, day, time }: ICarousel) => {

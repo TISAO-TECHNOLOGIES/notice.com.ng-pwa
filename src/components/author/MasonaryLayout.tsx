@@ -3,6 +3,7 @@ import { PostData } from "../../data/post";
 import MasonaryCard from "./MasonaryCard";
 
 const MasonaryLayout = () => {
+
 	return (
 		<section className="masonry-layout col2-layout mt-30">
 			<div className="container-fluid">
