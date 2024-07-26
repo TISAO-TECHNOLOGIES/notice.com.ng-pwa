@@ -51,7 +51,7 @@ const Carousel = (data: any, setData: any) => {
   }
 }
 							 */}
-							{CarouselData.map((owl: any) => {
+							{data.data.map((owl: any) => {
 								return (
 									<div key={owl.id} className="owl-item cloned" style={{width: "1349px"}}>
 										<OwlItem
