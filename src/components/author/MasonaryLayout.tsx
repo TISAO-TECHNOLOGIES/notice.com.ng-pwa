@@ -22,7 +22,7 @@ const MasonaryLayout = () => {
 										authorImage: post.author.authorImage,
 										authorName: post.author.authorName,
 									}}
-									day={post.day}
+									timeInt={post.timeInt}
 								/>
 							))}
 						</div>

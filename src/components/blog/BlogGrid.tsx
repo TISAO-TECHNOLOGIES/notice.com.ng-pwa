@@ -29,7 +29,7 @@ const BlogGrid = () => {
 												authorImage: post.author.authorImage,
 												authorName: post.author.authorName,
 											}}
-											day={post.day}
+											timeInt={post.timeInt}
 											slug={post.slug}
 										/>
 									) : (
@@ -43,7 +43,7 @@ const BlogGrid = () => {
 													authorImage: post.author.authorImage,
 													authorName: post.author.authorName,
 												}}
-												day={post.day}
+												timeInt={post.timeInt}
 												slug={post.slug}
 											/>
 										</div>

@@ -62,7 +62,7 @@ const Carousel = (data: any, setData: any) => {
 												authorImage: CarouselData[0].author.authorImage,
 												authorName: owl.postedBy,
 											}}
-											day={owl.dateModified.split(" ")[0]}
+											timeInt={owl.dateModified.split(" ")[0]}
 											time={owl.dateModified.split(" ")[0]}
 										/>
 									</div>

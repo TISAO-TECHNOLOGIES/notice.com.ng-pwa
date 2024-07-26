@@ -10,7 +10,7 @@ export const BlogData = [
 			authorImage: "/src/assets/others/1.jpg",
 			authorName: "David smith",
 		},
-		day: "January 12, 2021",
+		timeInt: "January 12, 2021",
 		slug: "How-to-Choose-Outfit-for-Work-for-woman-and-men",
 	},
 	{
@@ -24,7 +24,7 @@ export const BlogData = [
 			authorImage: "/src/assets/others/1.jpg",
 			authorName: "David smith",
 		},
-		day: "January 15, 2021",
+		timeInt: "January 15, 2021",
 		slug: "10-Best-and-Most-Beautiful-Places-to-Visit-in-Italy",
 	},
 	{
@@ -38,7 +38,7 @@ export const BlogData = [
 			authorImage: "/src/assets/others/1.jpg",
 			authorName: "David smith",
 		},
-		day: "January 15, 2021",
+		timeInt: "January 15, 2021",
 		slug:"Enjoy-My-Favourite-Molten-Chocolate-Cake",
 
 	},
@@ -53,7 +53,7 @@ export const BlogData = [
 			authorImage: "/src/assets/others/1.jpg",
 			authorName: "David smith",
 		},
-		day: "January 15, 2021",
+		timeInt: "January 15, 2021",
 		slug:"Top-10-Forests-That-Every-Nature-Lover-Must-Visit",
 
 	},
@@ -68,7 +68,7 @@ export const BlogData = [
 			authorImage: "/src/assets/others/1.jpg",
 			authorName: "David smith",
 		},
-		day: "January 15, 2021",
+		timeInt: "January 15, 2021",
 		slug:"How-To-Prepare-A-Royal-Healthy-Breakfast-At-Home",
 
 	},
@@ -83,7 +83,7 @@ export const BlogData = [
 			authorImage: "/src/assets/others/1.jpg",
 			authorName: "David smith",
 		},
-		day: "January 15, 2021",
+		timeInt: "January 15, 2021",
 		slug:"20-Cute-Girly-Outfits-to-Buy-for-the-First-Day-of-Winter",
 
 	},
@@ -98,7 +98,7 @@ export const BlogData = [
 			authorImage: "/src/assets/others/1.jpg",
 			authorName: "David smith",
 		},
-		day: "January 15, 2021",
+		timeInt: "January 15, 2021",
 		slug:"How-to-wear-when-you-travel-to-Montain",
 
 	},
@@ -113,7 +113,7 @@ export const BlogData = [
 			authorImage: "/src/assets/others/1.jpg",
 			authorName: "David smith",
 		},
-		day: "January 15, 2021",
+		timeInt: "January 15, 2021",
 		slug:"How-to-make-morrocos-pancake-in-five-steps",
 
 	},
@@ -128,7 +128,7 @@ export const BlogData = [
 			authorImage: "/src/assets/others/1.jpg",
 			authorName: "David smith",
 		},
-		day: "January 15, 2021",
+		timeInt: "January 15, 2021",
 		slug: "10-Easy-Tips-for-You-to-traveling-around-the-world",
 	},
 ];

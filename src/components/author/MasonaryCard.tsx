@@ -9,10 +9,10 @@ interface IPost {
 		authorImage: string;
 		authorName: string;
 	};
-	day: string;
+	timeInt: string;
 }
 
-const MasonaryCard = ({ thumbImg, category, title, description, author, day }: IPost) => {
+const MasonaryCard = ({ thumbImg, category, title, description, author, timeInt }: IPost) => {
 	const truncate = (word: string, n: number) => {
 		return word?.length > n ? word.substr(0, n - 1) + "..." : word;
 	};
@@ -44,7 +44,7 @@ const MasonaryCard = ({ thumbImg, category, title, description, author, day }: I
 								<span className="author">{author.authorName}</span>
 							</li>
 							<li className="dot"></li>
-							<li>{day}</li>
+							<li>{timeInt}</li>
 						</ul>
 					</div>
 				</div>

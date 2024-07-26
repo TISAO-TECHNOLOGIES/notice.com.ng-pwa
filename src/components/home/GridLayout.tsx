@@ -20,7 +20,7 @@ const GridLayout = () => {
 										authorImage: card.author.authorImage,
 										authorName: card.author.authorName,
 									}}
-									day={card.day}
+									timeInt={card.timeInt}
 									slug={card.slug}
 								/>
 							</div>

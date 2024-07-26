@@ -9,11 +9,11 @@ interface ICarousel {
 		authorImage: string;
 		authorName: string;
 	};
-	day: string;
+	timeInt: string;
 	time: string;
 }
 
-const OwlItem = ({ bgImage, category, title, author, day, time }: ICarousel) => {
+const OwlItem = ({ bgImage, category, title, author, timeInt, time }: ICarousel) => {
 	return (
 		<div
 			className="hero d-flex align-items-center"
@@ -41,7 +41,7 @@ const OwlItem = ({ bgImage, category, title, author, day, time }: ICarousel) => 
 										<Link to="/author">{author.authorName}</Link>
 									</li>
 									<li className="dot"></li>
-									<li>{day}</li>
+									<li>{timeInt}</li>
 									<li className="dot"></li>
 									<li>{time} Min Reads</li>
 								</ul>
