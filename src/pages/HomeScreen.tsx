@@ -23,6 +23,16 @@ const HomeScreen = () => {
 					headers: headers
 				});
 				const result = await response.json();
+				const addPrefixToFields = (arr: any, prefix: string) => {
+					return arr.map(item:any => {
+						item.slug = `${prefix}${item.slug}`;
+						item.thumbImg = `${prefix}${item.thumbImg}`;
+						return item;
+					});
+				};
+
+				const updatedData = addPrefixToFields(data, "https://example.com/");
+				if(typeof result._embedded.post =="object")
 				console.log(result._embedded.post);
 				setData(result._embedded.post);
 

@@ -10,7 +10,7 @@ const GridLayout = () => {
 					<div className="row">
 						{/* POST */}
 						{PostData.map((card) => (
-							<div key={card.id} className="col-lg-4 col-md-6">
+							<div data-key={card.id} className="col-lg-4 col-md-6">
 								<PostCard
 									thumbImg={card.thumbImg}
 									category={card.category}
