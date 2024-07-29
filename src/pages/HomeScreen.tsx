@@ -13,7 +13,6 @@ const HomeScreen = () => {
 	useEffect(() => {
 		const fetchData = async () => {
 			try {
-
 				console.log(data);
 				const headers = new Headers();
 				//headers.set('Authorization', 'Basic ' + btoa( "username:password" ).toString());
@@ -24,7 +23,7 @@ const HomeScreen = () => {
 				});
 				const result = await response.json();
 				const addPrefixToFields = (arr: any, prefix: string) => {
-					return arr.map(item:any => {
+					return arr.map((item: any) => {
 						item.slug = `${prefix}${item.slug}`;
 						item.thumbImg = `${prefix}${item.thumbImg}`;
 						return item;
