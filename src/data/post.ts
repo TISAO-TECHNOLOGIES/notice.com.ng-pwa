@@ -12,7 +12,8 @@ export const PostData = [
 		},
 		timeInt: "January 12, 2021",
 		slug: "How-to-Choose-Outfit-for-Work-for-woman-and-men",
-	},
+	}
+	/*,
 	{
 		id: "2",
 		thumbImg: "/src/assets/others/23.jpg",
@@ -130,5 +131,5 @@ export const PostData = [
 		},
 		timeInt: "January 15, 2021",
 		slug: "10-Easy-Tips-for-You-to-traveling-around-the-world",
-	},
+	},*/
 ];

@@ -1,6 +1,7 @@
 import { CarouselData } from "../../data/carousel";
 import OwlItem from "./OwlItem";
-import {Key, useState} from "react";
+import React, {Key, useState} from "react";
+import {Link} from "react-router-dom";
 
 const Carousel = (data: any, setData: any) => {
 	// const [post, setPost] = useState(CarouselData);
@@ -53,18 +54,55 @@ const Carousel = (data: any, setData: any) => {
 							 */}
 							{data.data.map((owl: any) => {
 								return (
-									<div key={owl.id} className="owl-item cloned" style={{width: "1349px"}}>
-										<OwlItem
-											bgImage={owl.thumbImg}
-											category={owl.categories}
-											title={owl.title}
-											author={{
-												authorImage: CarouselData[0].author.authorImage,
-												authorName: owl.postedBy,
-											}}
-											timeInt={owl.dateModified.split(" ")[0]}
-											time={owl.dateModified.split(" ")[0]}
-										/>
+									<div key={"home-carousel-" + owl.slug} className="owl-item cloned"
+										 style={{width: "1349px"}}>
+										<div
+											className="hero d-flex align-items-center"
+											style={{
+												backgroundImage: `url(${"https://www.notice.com.ng/"+owl.thumbImg})`,
+											}}>
+											<div className="container-fluid">
+												<div className="row">
+													<div className="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+														<div className="hero-content">
+															<Link to="/blog" className="categorie">
+																{owl.categories}
+															</Link>
+															<h2>
+																<Link to="/post">{owl.title} </Link>
+															</h2>
+															<div className="post-card-info">
+																<ul className="list-inline">
+																	<li>
+																		<Link to="/author">
+																			<img src={CarouselData[0].author.authorImage} alt=""/>
+																		</Link>
+																	</li>
+																	<li>
+																		<Link to="/author">{owl.postedBy}</Link>
+																	</li>
+																	<li className="dot"></li>
+																	<li>{owl.dateModified.split(" ")[0]}</li>
+																	<li className="dot"></li>
+																	<li>{(owl.dateModified.split(" ")[1])} Min Reads</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										{/*<OwlItem*/}
+										{/*	bgImage={"https://www.notice.com.ng/"+owl.thumbImg}*/}
+										{/*	category={owl.categories}*/}
+										{/*	title={owl.title}*/}
+										{/*	author={{*/}
+										{/*		authorImage: CarouselData[0].author.authorImage,*/}
+										{/*		authorName: owl.postedBy,*/}
+										{/*	}}*/}
+										{/*	timeInt={owl.dateModified.split(" ")[0]}*/}
+										{/*	time={owl.dateModified.split(" ")[0]}*/}
+										{/*/>*/}
 									</div>
 								);
 							})}

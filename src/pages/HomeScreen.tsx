@@ -15,7 +15,6 @@ const HomeScreen = () => {
 			try {
 				console.log(data);
 				const headers = new Headers();
-				//headers.set('Authorization', 'Basic ' + btoa( "username:password" ).toString());
 				headers.set('Authorization', 'Basic c3RhZ2luZzpzdGFnaW5nQDBwYXNz');
 				const response = await fetch('http://tisaoserver.question.ng:2345/post?page=0&size=20',{
 					method: 'GET', // Or 'POST' if it's a POST request
@@ -31,10 +30,8 @@ const HomeScreen = () => {
 				};
 
 				const updatedData = addPrefixToFields(data, "https://example.com/");
-				if(typeof result._embedded.post =="object")
-				console.log(result._embedded.post);
+				if(typeof result._embedded.post =="object") console.log(result._embedded.post);
 				setData(result._embedded.post);
-
 			} catch (error) {
 				console.error('Error fetching data:', error);
 			}
